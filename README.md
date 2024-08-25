@@ -8,3 +8,6 @@ uname -r
 
 # 发行版本
 lsb_release -a
+
+# 检查端口冲突
+sudo lsof -i :5902
