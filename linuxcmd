@@ -12,7 +12,7 @@ git checkout -b 新分支名
 # 修改文件...
 git add .
 git commit -m "你的提交说明"
-git push -u origin 新分支名
+git push -u origin 新分支名    // `-u` 设置上游关联，之后直接 `git push` 即可推送。
 
 # 基于main分支创建feature分支，并切过去
 git checkout -b feature main
