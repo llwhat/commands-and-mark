@@ -4,3 +4,15 @@ tput
 
 df -h // 查看哪个挂载点占空间
 du -sh * // 接着切到目录，查看所有一级子目录和文件的大小
+
+git commit --amend --no-edit
+git push origin HEAD:refs/for/master  // gerrit推送
+
+git checkout -b 新分支名
+# 修改文件...
+git add .
+git commit -m "你的提交说明"
+git push -u origin 新分支名
+
+# 基于main分支创建feature分支，并切过去
+git checkout -b feature main
